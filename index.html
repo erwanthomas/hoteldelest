@@ -1,12 +1,79 @@
 <!doctype html>
 <html>
 <head>
-	<title>Bienvenue sur le site web de l'Hôtel de l'Est</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Bienvenue sur le site web de l'Hôtel de l'Est</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+
+<div id="conteneur">
+
+    <div id="header">
+        <div id="logo">
+            <p id="titre">Hôtel de l'Est</p>
+            <p id="soutitre">★★★ Strasbourg</p>
+            <div id="contact">
+                <p>1 chemin des petites fleurs 67000 Strasbourg</p>
+                <p>+331 01 01 01 01 / contact@hde.fr</p>
+            </div>
+        </div>
+    </div><!-- fin #header -->
+
+    <div id="nav">
+        <ul>
+            <li><a href="#">Hôtellerie</a></li>
+            <li><a href="#">Restauration</a></li>
+            <li><a href="#">Événementiel</a></li>
+        </ul>
+    </div><!-- fin #nav -->
+
+    <div id="bloc">
+        <div id="resa">
+            <form id="kwikbook" name="kwikbook" action="#" method="post">
+                <p>
+                    <label for="date_resa">Date d'arrivée à&nbsp; l'hôtel : </label>
+                    <input rel="required" size="8" value="" id="date_resa" name="date_resa" type="text">
+                </p>
+                    <p>
+                        <label for="nb_nuit_rapide">Nombre de nuits(s) :</label>
+                        <select id="nb_nuit_rapide" name="nb_nuit_rapide">
+                            <option value="1" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input value="Tarifs et disponibilités" type="submit">
+                    </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="intro">
+        <p>Idéalement situé au cœur de la superbe ville de Strasbourg, l'Hôtel de l'Est
+            vous ravira par son cadre d'exception, le charme de son authenticité traditionnelle,
+            son ancrage dans le riche terroir d'Alsace et son ouverture vers le futur.</p>
+        <p>En famille, en couple, en solitaire, que vous soyez en vacances ou en séminaire d'entreprise,
+           l'Hôtel de l'Est répondra à toutes vos envies, tous vos besoins. Pas à l'ouest, mais à l'est,
+           lâchez du lest.</p>
+    </div>
+
+    <div id="pied">
+        <p><a href="mentions.html">mentions légales</a></p>
+    </div>
+
+</div><!-- fin #conteneur -->
+
+
 
 </body>
 </html>
