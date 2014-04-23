@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bienvenue sur le site web de l'Hôtel de l'Est</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="conteneur">
+
+    <div id="header">
+        <div id="logo">
+            <p id="titre"><a href="index.html">Hôtel de l'Est</a></p>
+            <p id="soutitre">★★★ Strasbourg</p>
+            <div id="contact" class="anversion">
+                <p><a href="contact.html">Nous contacter</a></p>
+                <p>1 chemin des petites fleurs 67000 Strasbourg (<a href="contact.html">accès</a>)</p>
+                <p>+331 01 01 01 01 / contact@hde.fr / fb: hde-strasbourg</p>
+            </div>
+        </div>
+    </div><!-- fin #header -->
+
+    <div id="nav">
+        <ul id="main">
+            <li><a href="hotel.html">Hôtellerie</a></li>
+            <li><a href="restau.html">Restauration</a></li>
+            <li><a href="seminaires.html">Événementiel</a></li>
+        </ul>
+        <ul id="supp">
+            <li><a href="alsace.html">Découvrir l'Alsace</a></li>
+            <li><a href="galerie.html">Photos de l'hôtel</a></li>
+        </ul>
+    </div><!-- fin #nav -->
+
+    <div id="fildariane">
+        <p><a href="index.html">Accueil</a> / <a href="contact.html">Contact</a></p>
+    </div>
+
+    <div id="corps" class="anversion">
+
+        <h1>Réservations</h1>
+
+        <div id="contenu" class="resa">
+            <h3>Que souhaitez-vous réserver ?</h3>
+
+            <ul>
+                <li><a href="#resahotel">Hôtel</a></li>
+                <li><a href="#resaresto">Restaurant</a></li>
+                <li><a href="#resasemin">Espace pour séminaire</a></li>
+            </ul>
+
+            <p>Pour tous les cas particuliers, comme des réservations de plus de 10 personnes, merci de bien vouloir nous contacter directement au 01 01 01 01 01.</p>
+            <p>Nous sommes par ailleurs au regret de vous informer qu'aucune promotion n'a cours en ce moment.</p>
+
+            <h3>Chambres d'hôtel</h3>
+
+<form id="resahotel" action="#" method="">
+    <p><label>Date d'arrivée<span class="obligatoire">*</span> : </label><input type="date" /></p>
+    <p><label>Date départ<span class="obligatoire">*</span> : </label><input type="date" /></p>
+    <p>
+        <label>Adulte(s)<span class="obligatoire">*</span> : </label>
+        <select>
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <label>Enfant(s)<span class="obligatoire">*</span> : </label>
+        <select>
+            <option value="0" selected="selected">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </p>
+
+    <p><label>Nom<span class="obligatoire">*</span> : </label><input type="text"></p>
+    <p><label>Prénom<span class="obligatoire">*</span> : </label><input type="text"></p>
+    <p><label>Tél<span class="obligatoire">*</span> : </label><input type="text"></p>
+    <p><label>Mail<span class="obligatoire">*</span> : </label><input type="text"></p>
+    <p><label>Votre message :</label><br><textarea rows="0" cols="0"></textarea></p>
+    <p><span class="obligatoire">* : champs obligatoires</span></p>
+    <p><input value="Envoyer" type="submit"></p>
+</form>
+            <h3>Tables de restaurant</h3>
+<form id="resaresto" action="#">
+    <p><label>Jour<span class="obligatoire">*</span> : </label><input type="date" /></p>
+    <p>
+        <label>Couvert(s)<span class="obligatoire">*</span> : </label>
+        <select>
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </p>
+    <p><label>Nom<span class="obligatoire">*</span> : </label><input type="text"></p>
+    <p><label>Prénom<span class="obligatoire">*</span> : </label><input type="text"></p>
+    <p><label>Tél<span class="obligatoire">*</span> : </label><input type="text"></p>
+    <p><label>Mail<span class="obligatoire">*</span> : </label><input type="text"></p>
+    <p><label>Votre message :</label><br><textarea rows="0" cols="0"></textarea></p>
+    <p><span class="obligatoire">* : champs obligatoires</span></p>
+    <p><input value="Envoyer" type="submit"></p>
+</form>
+            <h3>Espace entreprise</h3>
+
+            <p id="resasemin">Merci de nous contacter directement au 01 01 01 01 01 pour tout ce qui concerne les séminaires et autres événements ponctuels.</p>
+        </div><!-- fin #contenu -->
+
+    </div><!-- fin #corps -->
+
+    <div id="pied">
+        <p><a href="mentions.html">mentions légales</a></p>
+    </div>
+
+</div><!-- fin #conteneur -->
+
+</body>
+</html>

@@ -290,6 +290,28 @@ a:active { color: #c80018; }
     border-color: #c80018;
 }
 
+/* ---------------------------------------------*/
+#resahotel,
+#resaresto {
+    border: 1px solid #dcddd8;
+    border-radius: 5px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.resa label,
+.resa input {
+    width: 200px;
+}
+
+.resa textarea {
+    width: 360px;
+}
+
+
+
 
 #presa {
     width: 130px;
