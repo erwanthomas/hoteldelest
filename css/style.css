@@ -57,7 +57,7 @@ a:active { color: #c80018; }
 #logo p { margin: 0; padding: 0; width: 400px; text-align: center; }
 
 #titre { font-size: 50px; font-family: 'Berkshire Swash'; }
-#soutitre { font-size: 25px; font-family: 'Bershire Swash'; }
+#soutitre { font-size: 25px; }
 #contact {
     position: absolute;
     top: 0;
@@ -271,6 +271,25 @@ a:active { color: #c80018; }
 }
 
 #formcontact p:last-of-type { text-align: right; }
+
+#galerie {
+    text-align: center;
+    margin-left: 40px;
+}
+
+#galerie a {
+    display: block;
+    float: left;
+    width: 166px;
+    height: 166px;
+    border: 5px solid #fff;
+    border-bottom
+}
+
+#galerie a:hover, #galerie a:focus {
+    border-color: #c80018;
+}
+
 
 #presa {
     width: 130px;
