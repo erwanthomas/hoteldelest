@@ -12,59 +12,96 @@
 
     <div id="header">
         <div id="logo">
-            <p id="titre">Hôtel de l'Est</p>
+            <p id="titre"><a href="index.html">Hôtel de l'Est</a></p>
             <p id="soutitre">★★★ Strasbourg</p>
-            <div id="contact">
-                <p>1 chemin des petites fleurs 67000 Strasbourg</p>
-                <p>+331 01 01 01 01 / contact@hde.fr</p>
+            <div id="contact" class="anversion">
+                <p><a href="contact.html">Nous contacter</a></p>
+                <p>1 chemin des petites fleurs 67000 Strasbourg (<a href="contact.html">accès</a>)</p>
+                <p>+331 01 01 01 01 / contact@hde.fr / fb: hde-strasbourg</p>
             </div>
         </div>
     </div><!-- fin #header -->
 
     <div id="nav">
-        <ul>
-            <li><a href="#">Hôtellerie</a></li>
-            <li><a href="#">Restauration</a></li>
-            <li><a href="#">Événementiel</a></li>
+        <ul id="main">
+            <li><a href="hotel.html">Hôtellerie</a></li>
+            <li><a href="restau.html">Restauration</a></li>
+            <li><a href="seminaires.html">Événementiel</a></li>
         </ul>
     </div><!-- fin #nav -->
 
     <div id="bloc">
         <div id="resa">
-            <form id="kwikbook" name="kwikbook" action="#" method="post">
+            <h3>Réservation rapide</h3>
+            <form method="post" action="#">
                 <p>
-                    <label for="date_resa">Date d'arrivée à&nbsp; l'hôtel : </label>
-                    <input rel="required" size="8" value="" id="date_resa" name="date_resa" type="text">
+                    <label for="arrivdate">Arrivée le&nbsp;: </label>
+                    <input type="date" id="arrivdate" name="arrivdate">
                 </p>
-                    <p>
-                        <label for="nb_nuit_rapide">Nombre de nuits(s) :</label>
-                        <select id="nb_nuit_rapide" name="nb_nuit_rapide">
-                            <option value="1" selected="selected">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
-                    </p>
-                    <p>
-                        <input value="Tarifs et disponibilités" type="submit">
-                    </p>
+                <p>
+                    <label for="depdate">Départ le&nbsp;: </label>
+                    <input type="date" id="depdate" name="depdate">
+                </p>
+                <p>
+                    <label for="nbadulte">Adulte(s) :</label>
+                    <select id="nbadulte" name="nbadulte">
+                        <option value="1" selected="selected">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <label for="nbenfant">Enfant(s) :</label>
+                    <select id="nbenfant" name="nbadulte">
+                        <option value="0" selected="selected">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </p>
+                <p><input value="Envoyer" type="submit"></p>
+                <p>
+                    <a href="resa.html">Plus de choix</a> | <a href="resa.html">Promotions</a>
             </form>
         </div>
     </div>
 
-    <div id="intro">
-        <p>Idéalement situé au cœur de la superbe ville de Strasbourg, l'Hôtel de l'Est
-            vous ravira par son cadre d'exception, le charme de son authenticité traditionnelle,
-            son ancrage dans le riche terroir d'Alsace et son ouverture vers le futur.</p>
-        <p>En famille, en couple, en solitaire, que vous soyez en vacances ou en séminaire d'entreprise,
-           l'Hôtel de l'Est répondra à toutes vos envies, tous vos besoins. Pas à l'ouest, mais à l'est,
-           lâchez du lest.</p>
+    <div id="intro" class="anversion">
+<h1>L'hôtel de vos rêves</h1>
+<p>
+    Idéalement situé au cœur de la superbe ville de Strasbourg, l'Hôtel de l'Est
+    vous ravira par son cadre d'exception, le charme de son authenticité traditionnelle,
+    son ancrage dans le riche terroir d'Alsace et son ouverture vers le futur.
+</p>
+<p>
+    En famille, en couple, en solitaire, que vous soyez en vacances ou en séminaire d'entreprise,
+    l'Hôtel de l'Est répondra à toutes vos envies, tous vos besoins. Pas à l'ouest, mais à l'est,
+    lâchez du lest.
+</p>
+
+<h3>Nos valeurs</h3>
+<p>Hôtel de l'Est a mis en place une charte qualité dans un souci constant d'améliorer ses services où la satisfaction du client est au coeur de notre démarche.</p>
+
+<h3>L'équipe</h3>
+<p>Notre personnel est sélectionné et formé pour répondre au meilleur de notre engagement&nbsp;: votre entière satisfaction&nbsp;!</p>
+        <p>Vous aimeriez peut-être dans un premier visiter :</p>
+        <ul>
+            <li><a href="galerie.html">la galerie photo</a></li>
+            <li><a href="alsace.html">une présentation de l'Alsace</a></li>
+        </ul>
     </div>
 
     <div id="pied">

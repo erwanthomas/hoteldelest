@@ -1,11 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway|Libre+Baskerville);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Berkshire+Swash);
 
 body { margin: 0; padding: 0; }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    background-color: #fff;
     color: #222;
 }
 
@@ -18,14 +17,24 @@ a:visited {
 
 a:hover,
 a:focus,
-a:active {
+a:active { color: #c80018; }
+
+.anversion a,
+.anversion a:link,
+.anversion a:visited {
+    text-decoration: none;
     color: #c80018;
 }
+
+.anversion a:hover,
+.anversion a:focus,
+.anversion a:active { color: black; }
 
 #conteneur {
     width: 960px;
     margin: 0 auto;
-    padding-top: 104px;
+    padding-top: 124px;
+    background-color: white;
 }
 
 /* HEADER ------------------------------------ */
@@ -34,23 +43,24 @@ a:active {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 120px;
     border-bottom: 4px solid #C80018;
+    background-color: white;
 }
 
 #logo {
     position: relative;
     width: 960px;
-    margin: 10px auto 0 auto;
+    margin: 15px auto 0 auto;
 }
 
 #logo p { margin: 0; padding: 0; width: 400px; text-align: center; }
 
-#titre { font-size: 40px; }
-#soutitre { font-size: 25px; }
+#titre { font-size: 50px; font-family: 'Berkshire Swash'; }
+#soutitre { font-size: 25px; font-family: 'Bershire Swash'; }
 #contact {
     position: absolute;
-    top: 20px;
+    top: 0;
     right: 0;
     line-height: 30px;
 }
@@ -60,14 +70,14 @@ a:active {
 #nav {
     width: 100%;
     height: 60px;
-    border-bottom: 2px solid #d4d2cd;
+    position: relative;
 }
 
 #nav ul, #nav li {
     margin: 0; padding: 0;
 }
 
-#nav li {
+#main li {
     float: left;
     width: 320px;
     height: 60px;
@@ -78,12 +88,28 @@ a:active {
     font-size: 20px;
 }
 
+#supp {
+    position: absolute;
+    top: 61px;
+    right: 0;
+}
+
+#supp li {
+    list-style-type: none;
+    float: left;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
 /* BLOC -------------------------------------- */
 #bloc {
     position: relative;
     height: 400px;
     background: #f4f4f4 url(../img/chbr11.jpg) 0 0 no-repeat;
     background-size: cover;
+    border-radius: 5px;
 }
 
 #resa {
@@ -92,6 +118,180 @@ a:active {
     right: 50px;
     height: 300px;
     width: 400px;
-    border: 1px solid #d4d2cd;
     background-color: #fff;
+    border-radius: 5px;
+}
+
+#resa h3, #resa p {
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#resa h3 {
+    text-align: center;
+    font-weight: normal;
+    color: #222;
+}
+
+#resa p {
+    text-indent: 50px;
+}
+
+#resa [for="nbenfant"] {
+    margin-left: 30px;
+}
+
+#resa p:last-of-type {
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+#resa p:last-of-type a {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------- */
+
+#intro { padding: 0 30px; }
+
+#intro h1 { border-bottom: 2px solid #c80018; }
+
+/* ------------------------------------------- */
+
+#fildariane {
+    height: 50px;
+    font-style: italic;
+    border-top: 1px solid #d4d2cd;
+    border-bottom: 1px dashed #d4d2cd;
+}
+#fildariane p {
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------- */
+
+#gauche { float: left; width: 700px; }
+
+#gauche p { margin-right: 20px; }
+
+#droite { float: left; width: 260px; text-align: center; }
+
+#droite img { width: 134px; height: 200px; }
+#droite img.semin { width: 100%; height: auto; }
+
+#tarifs {
+    width: 500px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+#tarifs td { width: 250px; }
+
+#tarifs td:nth-child(even) { font-style: italic; }
+
+/* ------------------------------------------- */
+#menus,
+#menus ul,
+#menus li {
+    margin: 0;
+    padding: 0;
+}
+
+#menus li { list-style-type: none;}
+
+#menus > li {
+    display: inline-block;
+    width: 298px;
+    margin-right: 10px;
+    background-color: #dcddd8;
+    border: 1px solid #dcddd8;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#menus > li:last-child { margin-right: 0; }
+
+#menus > li > ul {
+    background-color: white;
+    text-align: left;
+    font-weight: normal;
+}
+
+#menus > li > ul > li { padding-left: 15px; }
+
+#menus > li > ul > li > ul { color: #c80018; }
+
+#menus > li > ul > li > ul > li {
+    margin-left: 30px;
+    font-style: italic;
+    list-style-type: circle;
+}
+
+.menusprix { font-style: italic; }
+
+#contenu h3 {
+    border-bottom: 2px solid #c80018;
+}
+
+/* ------------------------------------------- */
+#cgauche {
+    float: left;
+    width: 460px;
+    margin: 0;
+}
+
+#formcontact {
+    float: left;
+    width: 500px;
+    margin: 0;
+}
+
+.c2 {
+    display: table-cell;
+    width: 250px;
+    text-align: right;
+}
+
+.c2 input {
+    width: 150px;
+}
+
+.obligatoire { color: red; }
+
+#formcontact textarea {
+    width: 500px;
+    min-height: 200px;
+}
+
+#formcontact p:last-of-type { text-align: right; }
+
+#presa {
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #c80018;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#presa a { color: white; }
+
+#pied {
+    border-top: 1px solid #d4d2cd;
+    padding: 0 30px;
+    font-size: 12px;
+    text-align: right;
+}
+
+.clearfix {
+    clear: both;
 }
