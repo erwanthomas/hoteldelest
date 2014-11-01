@@ -1,7 +1,3 @@
-+---------------------------+
-| alpha.maen.fr/hoteldelest |
-+---------------------------+
-
 Ce site web a été réalisé pour la formation "Développeur-intégrateur Web"
 à l'IFOCOP pour valider l'apprentissage du HTML/CSS.
 
